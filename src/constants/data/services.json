@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "categoryId": 1,
+        "name": "Pedro Arana",
+        "age": 32,
+        "gender": "male",
+        "description": "Muy bueno con los perros, me encanta jugar con ellos.",
+        "tags": "Domicilio",
+        "certified": true,
+        "rating": 5,
+        "pricePerHour": 10000,
+        "currency": {
+            "symbol": "$",
+            "code": "CLP",
+            "name": "Chilean Pesos"
+        },
+        "profilePicture": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/smartphones.png?alt=media&token=e2b564ea-5a7d-4fcc-be49-4e3cc25c1d5e"
+    },
+    {
+        "id": 2,
+        "categoryId": 1,
+        "name": "Eyal Levy",
+        "age": 31,
+        "gender": "male",
+        "description": "Trabajo remoto, puedo cuidarlo mientras programo",
+        "tags": "Domicilio",
+        "certified": true,
+        "rating": 3.5,
+        "pricePerHour": 5000,
+        "currency": {
+            "symbol": "$",
+            "code": "CLP",
+            "name": "Chilean Pesos"
+        },
+        "profilePicture": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/smartphones.png?alt=media&token=e2b564ea-5a7d-4fcc-be49-4e3cc25c1d5e"
+    },
+    {
+        "id": 3,
+        "categoryId": 1,
+        "name": "Cristobal Haye",
+        "age": 33,
+        "gender": "male",
+        "description": "Soy pesimo cuidando perros, pero hago mi mejor esfuerzo",
+        "tags": "Domicilio",
+        "certified": true,
+        "rating": 2,
+        "pricePerHour": 5000,
+        "currency": {
+            "symbol": "$",
+            "code": "CLP",
+            "name": "Chilean Pesos"
+        }
+    },
+    [
+        {
+            "id": 4,
+            "categoryId": 2,
+            "name": "Pedro Paseador Arana",
+            "age": 32,
+            "gender": "male",
+            "description": "Muy bueno con los perros, me encanta pasearlos.",
+            "tags": "Domicilio",
+            "certified": true,
+            "rating": 5,
+            "pricePerHour": 10000,
+            "currency": {
+                "symbol": "$",
+                "code": "CLP",
+                "name": "Chilean Pesos"
+            },
+            "profilePicture": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/smartphones.png?alt=media&token=e2b564ea-5a7d-4fcc-be49-4e3cc25c1d5e"
+        },
+        {
+            "id": 5,
+            "categoryId": 2,
+            "name": "Eyal Paseador Levy",
+            "age": 31,
+            "gender": "male",
+            "description": "Trabajo remoto, puedo pasearlos mientras estoy en reuniones",
+            "tags": "Domicilio",
+            "certified": true,
+            "rating": 3.5,
+            "pricePerHour": 5000,
+            "currency": {
+                "symbol": "$",
+                "code": "CLP",
+                "name": "Chilean Pesos"
+            },
+            "profilePicture": "https://firebasestorage.googleapis.com/v0/b/ecommerce-app-c91d9.appspot.com/o/smartphones.png?alt=media&token=e2b564ea-5a7d-4fcc-be49-4e3cc25c1d5e"
+        },
+        {
+            "id": 6,
+            "categoryId": 2,
+            "name": "Cristobal Paseador Haye",
+            "age": 33,
+            "gender": "male",
+            "description": "Soy pesimo paseando perros, pero hago mi mejor esfuerzo",
+            "tags": "Domicilio",
+            "certified": true,
+            "rating": 2,
+            "pricePerHour": 5000,
+            "currency": {
+                "symbol": "$",
+                "code": "CLP",
+                "name": "Chilean Pesos"
+            }
+        }
+    ]
+]
