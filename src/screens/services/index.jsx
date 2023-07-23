@@ -5,7 +5,7 @@ import { View, Text, FlatList, TouchableOpacity, ImageBackground } from 'react-n
 import { Input } from '../../components';
 import SERVICES from '../../constants/data/services.json';
 import { COLORS } from '../../themes';
-import ProductsDetails from '../productDetails';
+import ProductDetails from '../productDetails';
 import { styles } from '../services/styles';
 
 const Services = ({ navigation, route }) => {
@@ -51,7 +51,7 @@ const Services = ({ navigation, route }) => {
     <View style={styles.container}>
       <Text>Productos</Text>
       {isProductSelected ? (
-        <ProductsDetails selectedProduct={selectedProduct} />
+        <ProductDetails selectedProduct={selectedProduct} />
       ) : (
         <>
           <View style={styles.header}>

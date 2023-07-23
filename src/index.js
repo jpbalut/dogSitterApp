@@ -1,13 +1,10 @@
 import { useFonts } from 'expo-font';
 import { ActivityIndicator, SafeAreaView, StyleSheet, View } from 'react-native';
+import { Provider } from 'react-redux';
 
 import RootNavigator from './navigations';
+import { store } from './store';
 import { COLORS } from './themes';
-
-// const categoryDefault = {
-//   categoryId: null,
-//   color: COLORS.primary,
-// };
 
 export default function App() {
   const [loaded] = useFonts({
@@ -16,31 +13,7 @@ export default function App() {
     'Inter-Light': require('../assets/fonts/Inter-Light.ttf'),
     'Inter-Medium': require('../assets/fonts/Inter-Medium.ttf'),
   });
-  // const [isCategorySelected, setIsCategorySelected] = useState(false);
-  // const [selectedCategory, setSelectedCategory] = useState(categoryDefault);
-  // const headerTitle = isCategorySelected ? "Products" : "Categories";
 
-  // const onHandleSelectCategory = ({ categoryId, color }) => {
-  //   setSelectedCategory({ categoryId, color });
-  //   setIsCategorySelected(!isCategorySelected);
-  // };
-
-  // const onHandleNavigate = () => {
-  //   setIsCategorySelected(!isCategorySelected);
-  //   setSelectedCategory(categoryDefault);
-  // };
-
-  // <View style={styles.container}>
-  //       <Header
-  //         title={headerTitle}
-  //         style={{ backgroundColor: selectedCategory ? selectedCategory.color : COLORS.primary }}
-  //       />
-  //       {isCategorySelected ? (
-  //         <Products onHandleGoBack={onHandleNavigate} categorySelected={selectedCategory} />
-  //       ) : (
-  //         <Categories onSelectCategory={onHandleSelectCategory} />
-  //       )}
-  //     </View>
   if (!loaded) {
     return (
       <View style={styles.loaderContainer}>
@@ -49,9 +22,11 @@ export default function App() {
     );
   }
   return (
-    <SafeAreaView style={styles.container}>
-      <RootNavigator />
-    </SafeAreaView>
+    <Provider store={store}>
+      <SafeAreaView style={styles.container}>
+        <RootNavigator />
+      </SafeAreaView>
+    </Provider>
   );
 }
 

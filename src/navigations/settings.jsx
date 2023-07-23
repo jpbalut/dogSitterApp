@@ -9,7 +9,6 @@ const SettingsNavigator = () => {
     <Stack.Navigator
       initialRouteName="Settings"
       screenOptions={{
-        presentation: 'modal',
         headerStyle: { backgroundColor: COLORS.primary },
         headerTitleStyle: { fontFamily: 'Inter-Bold', fontSize: 16 },
         headerTintColor: COLORS.white,

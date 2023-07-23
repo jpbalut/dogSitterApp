@@ -1,12 +1,13 @@
 import { FlatList, SafeAreaView, View } from 'react-native';
+import { useSelector } from 'react-redux';
 
 import { styles } from './styles';
 import { CategoryItem } from '../../components';
-import CATEGORIES from '../../constants/data/categories.json';
 import ORIENTATION from '../../constants/data/orientation';
 import useOrientation from '../../hooks/useOrientation';
 
 function Categories({ navigation }) {
+  const categories = useSelector((state) => state.categories.data);
   const orientation = useOrientation();
   const onSelectCategory = ({ categoryId, color }) => {
     navigation.navigate('Products', { categoryId, color });
@@ -16,7 +17,7 @@ function Categories({ navigation }) {
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
         <FlatList
-          data={CATEGORIES}
+          data={categories}
           style={styles.categoryContainer}
           renderItem={({ item }) => (
             <CategoryItem

@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import CartNavigator from './cart';
 import ServicesNavigator from './services';
 import SettingsNavigator from './settings';
 import ShopNavigator from './shop';
@@ -30,6 +31,23 @@ const TabsNavigator = () => {
           tabBarIcon: ({ focused, color }) => (
             <Ionicons name={focused ? 'home' : 'home-outline'} size={30} color={color} />
           ),
+        }}
+      />
+      <BottomTab.Screen
+        name="CartTab"
+        component={CartNavigator}
+        options={{
+          tabBarLabel: 'Cart',
+          tabBarIcon: ({ focused, color }) => (
+            <Ionicons name={focused ? 'cart' : 'cart-outline'} size={20} color={color} />
+          ),
+          tabBarBadge: 2,
+          tabBarBadgeStyle: {
+            backgroundColor: COLORS.secondary,
+            color: COLORS.white,
+            fontFamily: 'Inter-Regular',
+            fontSize: 11,
+          },
         }}
       />
       <BottomTab.Screen
